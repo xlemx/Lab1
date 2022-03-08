@@ -1,7 +1,13 @@
 package pl.lublin.wsei.java.cwiczenia;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void /** komentarz Javadoc */main(String[] args) {
+        //komentarz jednolinijkowy
+        /*komentarz
+        * wielolinijkowy*/
+
+        System.out.println("Hello Java world\n");
+
 
     }
 }
