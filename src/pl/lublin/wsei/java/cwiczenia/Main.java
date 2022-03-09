@@ -6,7 +6,10 @@ public class Main {
         /*komentarz
         * wielolinijkowy*/
 
-        System.out.println("Hello Java world\n");
+        System.out.print("Ala");
+        System.out.print("ma");
+        System.out.print("kota");
+
 
 
     }
