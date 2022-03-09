@@ -6,9 +6,9 @@ public class Main {
         /*komentarz
         * wielolinijkowy*/
 
-        System.out.println("Ala");
-        System.out.println("man");
-        System.out.println("kota");
+        System.out.println("Ala\n");
+        System.out.println("man\n");
+        System.out.println("kota\n");
 
 
 
