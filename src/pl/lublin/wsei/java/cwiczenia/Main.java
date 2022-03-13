@@ -1,21 +1,26 @@
 package pl.lublin.wsei.java.cwiczenia;
-
-import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
-
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int num=0;
-        do {
+        int[] liczby = new int[30];
+        Random rnd = new Random();
 
-            System.out.print("Podaj pierwszą liczbę: ");
-            num= input.nextInt();
-            if (num== 0) break ;
+        for (int i = 0; i < 30; i++)
+            liczby[i] = rnd.nextInt();
 
-            System.out.println("DEC = " + num);
-            System.out.println("HEX = " + Integer.toHexString(num));
-            System.out.println("BIN = " + Integer.toBinaryString(num));
-        } while (true);
+        int mx = Integer.MIN_VALUE;
+        int mn = Integer.MAX_VALUE;
+        long avg = 0;
+        for (int l : liczby) {
+            System.out.println(l);
+            if (l < mn) mn = l;
+            if (l > mx) mx = l;
+            avg += l;
+        }
+        System.out.printf("MIN = %d, MAX = %d, AVG = %f",mn,mx,(float)avg/liczby.length);
     }
 }
+
+
+
